@@ -6,6 +6,7 @@ Built strictly with **plain HTML5, CSS3, and modern Vanilla JavaScript**.
 - No frameworks (No React, Vue, or Angular)
 - No build step or bundlers (No Webpack, Vite, or npm scripts)
 - No backend, database, or external API calls
+- Only external resource: Google Fonts (typography)
 - 100% Privacy-Preserving (Zero personal identifiable information)
 
 ---
@@ -54,7 +55,7 @@ Raw Datasets ──▶ Analytical Insights ──▶ Cross-Dataset Relationships
 
 ## How the Large Datasets Were Summarized (Without Changing Originals)
 
-The original datasets reside untouched in the `raw data/` folder:
+The original datasets were kept untouched on my local machine (they are not included in this repo because of their size):
 - `spotify_history.csv`: **149,860 rows (~21.3 MB)**
 - `Daily Household Transactions.csv`: **2,461 rows (~190 KB)**
 - `Augmented_IndiaTransactMultiFacet2024.csv`: **10,267 rows (~2.5 MB)**
@@ -116,7 +117,7 @@ The original datasets reside untouched in the `raw data/` folder:
 
 - **HTML5**: Semantic elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`), ARIA labels, role dialogs.
 - **CSS3**: Paper & Ink design system (`#EEF0EE` page, `#FAFAF8` receipts, `#1C1F26` ink, `#5B616B` muted, `#B3261E` accent stamp red), sawtooth jagged edges, dashed dividers, responsive down to 360px.
-- **JavaScript**: Pure Vanilla ES6+, zero external libraries, modular structure.
+- **JavaScript**: Pure Vanilla ES6+, zero external libraries (only Google Fonts is loaded for typography), modular structure.
 
 ---
 
@@ -124,8 +125,8 @@ The original datasets reside untouched in the `raw data/` folder:
 
 Because this project is built entirely with plain HTML, CSS, and JavaScript, no installation or build step is required:
 
-1. Navigate to `C:\Users\user\Desktop\hackathon\`.
-2. Double-click **`index.html`** (or right-click -> Open with Chrome / Firefox / Edge).
+1. Download or clone this repository.
+2. Double-click **`index.html`** (or open it with Chrome / Firefox / Edge).
 3. **Key interactions to verify**:
    - **Journey Timeline**: Click any chapter band or year button to jump to that chapter.
    - **Listening Clock**: Hover over radial bars on the 24-hour dial to view hourly stream counts.

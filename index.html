@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your Life, In Receipts - Transforming 11+ years of financial receipts and Spotify streams into an interactive personal story.">
+  <title>Your Life, In Receipts | An Interactive Digital Odyssey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Accessibility: Skip to Main Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Hero Section -->
+  <header class="hero" id="hero-section">
+    <div class="container">
+      <h1 class="hero-title">Your Life, In Receipts</h1>
+      <p class="hero-subtitle">
+        What happens when you align 11 years of music streaming with every train ticket, grocery bill, and credit receipt? The story of an ordinary life, told through its digital footprints.
+      </p>
+
+      <!-- Fictional Persona Card & Overall Stats -->
+      <div class="persona-card" role="region" aria-label="Fictional Persona Profile">
+        <div class="persona-header">
+          <div class="persona-info">
+            <div class="persona-avatar" aria-hidden="true">AV</div>
+            <div>
+              <div class="persona-name">
+                Arjun Verma
+                <span class="persona-badge">Fictional Persona</span>
+              </div>
+              <p class="persona-era" id="profile-tagline">11+ Years of Digital Footprints (2013 – 2024)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Global Stats Counters -->
+        <div class="stats-grid" id="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value" id="stat-streams">149,860</div>
+            <div class="stat-label">Tracks Streamed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" id="stat-hours">5,341.5 hrs</div>
+            <div class="stat-label">Audio Played (~320k mins)</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" id="stat-txns">12,728</div>
+            <div class="stat-label">Recorded Transactions</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" id="stat-top-artist">The Beatles</div>
+            <div class="stat-label">Top Artist All-Time (336h)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Section Navigation (Normal navigation links) -->
+  <nav class="nav-bar" aria-label="Page Sections">
+    <div class="container">
+      <div class="nav-tabs">
+        <a href="#journey-section" class="nav-tab-link active">01. Journey Timeline</a>
+        <a href="#chapters-section" class="nav-tab-link">02. Life Chapters</a>
+        <a href="#clock-section" class="nav-tab-link">03. Listening Clock</a>
+        <a href="#connections-section" class="nav-tab-link">04. Connected Moments</a>
+        <a href="#receipts-section" class="nav-tab-link">05. Receipts Explorer</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- 1. JOURNEY VISUAL: Horizontal Timeline 2013-2024 -->
+    <section class="section" id="journey-section" aria-labelledby="journey-heading">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-tag">Visual Journey (2013 – 2024)</div>
+          <h2 class="section-title" id="journey-heading">The 11-Year Digital Odyssey</h2>
+          <p class="section-desc">
+            A comprehensive chronological view tracking annual Spotify listening hours against financial outlays. Select any chapter band or year to jump directly into that chapter.
+          </p>
+        </header>
+
+        <!-- Chapter Bands Track (Horizontal spans) -->
+        <div class="timeline-bands-wrapper">
+          <span class="timeline-track-label">CHAPTER BANDS (CLICK TO NAVIGATE):</span>
+          <div class="timeline-bands-track" id="timeline-bands-track" role="navigation" aria-label="Chapter timeline bands">
+            <button class="band-btn band-pre" data-ch="null" aria-label="Pre-tracking era 2013 to 2014">
+              <span class="band-title">PRE-TRACKING</span>
+              <span class="band-years">'13–'14</span>
+            </button>
+            <button class="band-btn band-ch1" data-ch="0" aria-label="Chapter 1: The Commute, 2015 to 2017">
+              <span class="band-title">CH 01: THE COMMUTE</span>
+              <span class="band-years">2015 – 2017</span>
+            </button>
+            <button class="band-btn band-ch2" data-ch="1" aria-label="Chapter 2: Milestones, 2018">
+              <span class="band-title">CH 02: MILESTONES</span>
+              <span class="band-years">2018</span>
+            </button>
+            <button class="band-btn band-ch3" data-ch="2" aria-label="Chapter 3: Lockdown Sanctuary, 2019 to 2021. Note: No receipt data">
+              <span class="band-title">CH 03: SANCTUARY</span>
+              <span class="band-gap-tag">[NO RECEIPT DATA]</span>
+              <span class="band-years">2019 – 2021</span>
+            </button>
+            <button class="band-btn band-ch4" data-ch="3" aria-label="Chapter 4: The Jet-Set, 2022 to 2023">
+              <span class="band-title">CH 04: JET-SET</span>
+              <span class="band-years">2022 – 2023</span>
+            </button>
+            <button class="band-btn band-ch5" data-ch="4" aria-label="Chapter 5: Mindful Harmony, 2024">
+              <span class="band-title">CH 05: HARMONY</span>
+              <span class="band-years">2024</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Annual Listening Hours & Spending Bar Chart -->
+        <div class="timeline-chart-card">
+          <div class="chart-legend-row">
+            <div class="legend-item">
+              <span class="legend-box bar-color-indicator"></span>
+              <span>Annual Listening Hours (Max 881 hrs)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-tag-indicator">[SPEND]</span>
+              <span>Documented Financial Total (or Data Gap)</span>
+            </div>
+          </div>
+
+          <!-- Dynamic Bar Chart Container -->
+          <div class="timeline-bars-grid" id="timeline-bars-grid" role="region" aria-label="Year-by-year listening and spending chart">
+            <!-- Populated dynamically via app.js -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 2: 5 Life Chapters -->
+    <section class="section" id="chapters-section" aria-labelledby="chapters-heading">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-tag">Interactive Narrative</div>
+          <h2 class="section-title" id="chapters-heading">The 5 Life Chapters</h2>
+          <p class="section-desc">
+            Explore how everyday receipts weave together with 150k Spotify tracks across five eras. Step through each chapter to see the strict mathematical data side-by-side with its human story.
+          </p>
+        </header>
+
+        <!-- Chapter Stepper Navigation -->
+        <div class="chapter-stepper" id="chapter-stepper" role="tablist" aria-label="Select Life Chapter">
+          <!-- Populated dynamically via app.js -->
+        </div>
+
+        <!-- Active Chapter Card -->
+        <article class="chapter-card" id="chapter-content-box" aria-live="polite">
+          <header class="chapter-header">
+            <div class="chapter-meta">
+              <span class="chapter-badge" id="ch-badge">CH 01</span>
+              <div>
+                <h3 class="chapter-heading" id="ch-title">The Commute & The Dream</h3>
+                <span class="chapter-years" id="ch-dates">2015 – 2017</span>
+              </div>
+            </div>
+          </header>
+
+          <!-- Side-by-Side: What the Data Says vs The Story -->
+          <div class="chapter-body-grid">
+            
+            <!-- Panel 1: What the Data Says (Real numbers only) -->
+            <div class="data-panel">
+              <div class="panel-tag">
+                <span class="tag-bullet">[DATA]</span>
+                <h4>What The Data Says (Real Numbers)</h4>
+              </div>
+              <ul class="data-list" id="ch-data-list">
+                <!-- Dynamically populated -->
+              </ul>
+            </div>
+
+            <!-- Panel 2: The Story (Narrative interpretation) -->
+            <div class="story-panel">
+              <div class="panel-tag">
+                <span class="tag-bullet">[NARRATIVE]</span>
+                <h4>The Story (Interpretation)</h4>
+              </div>
+              <p class="story-text" id="ch-story-text">
+                <!-- Dynamically populated -->
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="chapter-controls">
+            <button class="btn" id="prev-chapter-btn" aria-label="Go to previous chapter">
+              <span aria-hidden="true">←</span> Previous Chapter
+            </button>
+            <span class="step-counter" id="ch-step-counter" style="font-family: var(--font-mono); font-size: 0.875rem; color: var(--text-muted);">
+              Chapter 1 of 5
+            </span>
+            <button class="btn" id="next-chapter-btn" aria-label="Go to next chapter">
+              Next Chapter <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Pattern Discovery (24-Hour Listening Clock) -->
+    <section class="section" id="clock-section" aria-labelledby="clock-heading">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-tag">Pattern Discovery</div>
+          <h2 class="section-title" id="clock-heading">The 24-Hour Listening Clock</h2>
+          <p class="section-desc">
+            Mapping all 1,49,860 streams across the 24 hours of the day (Indian Standard Time). Discover the dramatic acoustic shift between daytime commutes and late-night insomnia sessions.
+          </p>
+        </header>
+
+        <div class="clock-display-grid">
+          <!-- Left: Circular / Radial 24-Hour Clock SVG -->
+          <div class="clock-visual-card">
+            <div class="clock-svg-container" id="clock-svg-wrapper">
+              <!-- SVG Dial injected by app.js -->
+            </div>
+            <div class="clock-sublabel">
+              INNER DIAL: 24 HOURS (IST) • RED HATCH: LATE-NIGHT (11 PM – 5 AM)
+            </div>
+          </div>
+
+          <!-- Right: Late-Night vs Daytime Comparative Ledgers -->
+          <div class="clock-details-column">
+            
+            <!-- Late-Night Box -->
+            <div class="clock-ledger-box late-night-ledger">
+              <div class="ledger-header">
+                <span class="ledger-tag-stamp">LATE-NIGHT ARCHIVE (11 PM – 5 AM IST)</span>
+                <span class="ledger-metric">2,053.6 HRS (38.4%)</span>
+              </div>
+              <p class="ledger-summary">
+                Over 38% of all listening happened after hours. High-energy daytime rock gave way to quiet acoustic intimacy and immersive orchestral film scores.
+              </p>
+              <div class="ledger-artists-list">
+                <strong>TOP LATE-NIGHT ARTISTS:</strong>
+                <span class="artist-pill">The Beatles (141.9h)</span>
+                <span class="artist-pill">The Killers (108.1h)</span>
+                <span class="artist-pill">John Mayer (83.6h)</span>
+                <span class="artist-pill">Bob Dylan (61.6h)</span>
+                <span class="artist-pill">Howard Shore (48.6h)</span>
+              </div>
+            </div>
+
+            <!-- Daytime Box -->
+            <div class="clock-ledger-box daytime-ledger">
+              <div class="ledger-header">
+                <span class="ledger-tag-stamp">DAYTIME LEDGER (5 AM – 11 PM IST)</span>
+                <span class="ledger-metric">3,287.9 HRS (61.6%)</span>
+              </div>
+              <p class="ledger-summary">
+                Daytime streams powered early-morning train commutes, workday focus blocks, and afternoon road trips with driving rock rhythms.
+              </p>
+              <div class="ledger-artists-list">
+                <strong>TOP DAYTIME ARTISTS:</strong>
+                <span class="artist-pill">The Beatles (194.3h)</span>
+                <span class="artist-pill">The Killers (186.2h)</span>
+                <span class="artist-pill">John Mayer (117.8h)</span>
+                <span class="artist-pill">The Rolling Stones (57.5h)</span>
+                <span class="artist-pill">The Strokes (53.2h)</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Relationships (Connected Moments) -->
+    <section class="section" id="connections-section" aria-labelledby="connections-heading">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-tag">Cross-Dataset Relationships</div>
+          <h2 class="section-title" id="connections-heading">Connected Moments</h2>
+          <p class="section-desc">
+            Five verified instances where financial transactions and Spotify listening synced on the exact same calendar day, revealing the emotional context behind the spend.
+          </p>
+        </header>
+
+        <!-- 5 Same-Day Connected Pairs Container -->
+        <div class="connections-list" id="connections-list" role="region" aria-label="Synchronized life moments">
+          <!-- Populated dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 5: Receipts Explorer -->
+    <section class="section" id="receipts-section" aria-labelledby="explorer-heading">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-tag">Search & Discover</div>
+          <h2 class="section-title" id="explorer-heading">Receipts Explorer</h2>
+          <p class="section-desc">
+            Search and filter individual life receipts. Click any thermal card to reveal the exact music stream recorded on that day.
+          </p>
+        </header>
+
+        <!-- Search & Category Filters -->
+        <div class="explorer-toolbar" role="search">
+          <div class="search-wrapper">
+            <span class="search-label-prefix" aria-hidden="true">QUERY:</span>
+            <input 
+              type="search" 
+              class="search-input" 
+              id="receipt-search" 
+              placeholder="Search receipts by merchant, notes, or purpose (e.g., 'Train', 'Netflix', 'Bike', 'Pizza', 'Doctor')..."
+              aria-label="Search receipts by keyword"
+            >
+          </div>
+
+          <!-- Era Filter -->
+          <div class="filter-group" role="radiogroup" aria-label="Filter by Era">
+            <span class="filter-label">Era:</span>
+            <button class="filter-chip active" data-era="All" role="radio" aria-checked="true">All Eras</button>
+            <button class="filter-chip" data-era="Household Era (2015-2018)" role="radio" aria-checked="false">Household (2015–2018)</button>
+            <button class="filter-chip" data-era="Digital Era (2022-2024)" role="radio" aria-checked="false">Digital (2022–2024)</button>
+          </div>
+
+          <!-- Category Filter Chips -->
+          <div class="filter-group" id="category-chips-group" role="radiogroup" aria-label="Filter by Category">
+            <span class="filter-label">Category:</span>
+            <button class="filter-chip active" data-cat="All" role="radio" aria-checked="true">All Categories</button>
+            <button class="filter-chip" data-cat="Vehicles & Transport" role="radio" aria-checked="false">Vehicles & Transport</button>
+            <button class="filter-chip" data-cat="Investments" role="radio" aria-checked="false">Investments</button>
+            <button class="filter-chip" data-cat="Subscriptions" role="radio" aria-checked="false">Subscriptions</button>
+            <button class="filter-chip" data-cat="Food & Snacks" role="radio" aria-checked="false">Food & Snacks</button>
+            <button class="filter-chip" data-cat="Healthcare" role="radio" aria-checked="false">Healthcare</button>
+            <button class="filter-chip" data-cat="Travel & Flights" role="radio" aria-checked="false">Travel & Flights</button>
+            <button class="filter-chip" data-cat="Entertainment" role="radio" aria-checked="false">Entertainment</button>
+            <button class="filter-chip" data-cat="Fitness & Health" role="radio" aria-checked="false">Fitness & Health</button>
+          </div>
+        </div>
+
+        <div class="results-count" id="results-count" aria-live="polite">
+          Showing all receipts
+        </div>
+
+        <!-- Thermal Receipt Cards Grid -->
+        <div class="receipts-grid" id="receipts-container" aria-label="Receipts List">
+          <!-- Populated dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Accessible Receipt Detail Modal -->
+  <div class="modal-overlay" id="receipt-modal" role="dialog" aria-modal="true" aria-labelledby="modal-merchant" aria-hidden="true">
+    <div class="modal-content" role="document">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">×</button>
+
+      <div class="modal-receipt-summary">
+        <span class="modal-date" id="modal-date">2018-01-18</span>
+        <h3 class="modal-title" id="modal-merchant">Two Wheeler Showroom</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9375rem;" id="modal-desc">
+          Second installment for Two Wheeler Bikedelux
+        </p>
+
+        <div class="modal-grid-stats">
+          <div class="modal-stat-box">
+            <div class="label">Amount Paid</div>
+            <div class="val" id="modal-amount">₹50,330</div>
+          </div>
+          <div class="modal-stat-box">
+            <div class="label">Payment Mode</div>
+            <div class="val" id="modal-mode">Bank Transfer</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Connected Spotify Listening for That Day -->
+      <div class="connected-listening-panel">
+        <div class="connected-badge">
+          CONNECTED LISTENING FOR THIS DAY
+        </div>
+
+        <div class="music-grid-details">
+          <div class="music-metric">
+            <div class="metric-label">Tracks Played</div>
+            <div class="metric-val" id="modal-tracks">78 streams</div>
+          </div>
+          <div class="music-metric">
+            <div class="metric-label">Listening Time</div>
+            <div class="metric-val" id="modal-hours">4.8 hrs</div>
+          </div>
+          <div class="music-metric">
+            <div class="metric-label">Top Artist</div>
+            <div class="metric-val" id="modal-top-artist">The Killers</div>
+          </div>
+          <div class="music-metric">
+            <div class="metric-label">Mood / Vibe</div>
+            <div class="metric-val" id="modal-mood">Triumphant</div>
+          </div>
+        </div>
+
+        <div class="music-narrative-box" id="modal-music-narrative">
+          Celebrating the bike milestone with hot pizza and 78 consecutive tracks of high-voltage indie rock.
+        </div>
+      </div>
+
+      <!-- Related Receipts (Same Category or Era) -->
+      <div class="modal-related-section">
+        <div class="modal-related-header">
+          <span class="tag-bullet">[RELATED]</span>
+          <h4>Related Receipts (Same Category or Era)</h4>
+        </div>
+        <p class="modal-related-desc">Click any receipt below to inspect that moment:</p>
+        <div class="modal-related-pills" id="modal-related-pills" role="navigation" aria-label="Related moments">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <p><strong>Your Life, In Receipts</strong> — Plain HTML, CSS, JavaScript.</p>
+        <p style="font-size: 0.8125rem; margin-top: 0.25rem;">
+          No backend, no external server, strictly zero personal identifiable information.
+        </p>
+      </div>
+      <div class="footer-guarantee">
+        PRIVACY GUARANTEED • 100% SANITIZED ARCHIVE
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
